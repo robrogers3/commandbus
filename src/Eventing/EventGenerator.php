@@ -6,7 +6,7 @@ class EventGenerator
 {
     protected $pendingEvents = [];
     /**
-     * @var \App\Eventing\EventDispatcher
+     * @var \RobRogers\CommandBus\Eventing\EventDispatcher
      */
     private $dispatcher;
 
