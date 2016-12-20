@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RobRogers\\Commandbus\\": "src"
+            "RobRogers\\CommandBus\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RobRogers\\Commandbus\\": "tests"
+            "RobRogers\\CommandBus\\": "tests"
         }
     },
     "scripts": {
