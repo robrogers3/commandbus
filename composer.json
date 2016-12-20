@@ -1,0 +1,51 @@
+{
+    "name": "robrogers3/commandbus",
+    "type": "library",
+    "description": "commandbus for php53",
+    "keywords": [
+        "robrogers3",
+        "agnostic-commandbus"
+    ],
+    "homepage": "https://github.com/robrogers3/agnostic-commandbus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Rogers",
+            "email": "robrogers@me.com",
+            "homepage": "https://github.com/robrogers3",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "filp/whoops": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RobRogers\\Commandbus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RobRogers\\Commandbus\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
