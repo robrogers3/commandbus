@@ -2,26 +2,20 @@
 
 namespace RobRogers\CommandBus;
 
-use Illuminate\Foundation\Application;
-
 class BaseCommandBus implements CommandBus
 {
     protected $commandTranslator;
 
-    /**
-     * @var Application
-     */
     private $app;
 
     /**
      * CommandBus constructor.
-     * @param Application $app
      * @param CommandTranslator $commandTranslator
      */
-    public function __construct(Application $app,  CommandTranslator $commandTranslator)
+    public function __construct(CommandTranslator $commandTranslator)
     {
         $this->commandTranslator = $commandTranslator;
-        $this->app = $app;
+        $this->app = \App::Make('App');
     }
 
     //$command is just some dto
