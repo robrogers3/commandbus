@@ -4,7 +4,7 @@ namespace RobRogers\CommandBus\Eventing;
 
 class EventGenerator
 {
-    protected $pendingEvents = [];
+    protected $pendingEvents = array();
     /**
      * @var \RobRogers\CommandBus\Eventing\EventDispatcher
      */
@@ -31,7 +31,7 @@ class EventGenerator
     {
         $events = $this->pendingEvents;
 
-        $this->pendingEvents = [];
+        $this->pendingEvents = array();
 
         return $events;
     }
