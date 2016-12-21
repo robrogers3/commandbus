@@ -6,8 +6,6 @@ class BaseCommandBus implements CommandBus
 {
     protected $commandTranslator;
 
-    private $app;
-
     /**
      * CommandBus constructor.
      * @param CommandTranslator $commandTranslator
@@ -15,14 +13,21 @@ class BaseCommandBus implements CommandBus
     public function __construct(CommandTranslator $commandTranslator)
     {
         $this->commandTranslator = $commandTranslator;
-        $this->app = \App::Make('App');
+
     }
 
-    //$command is just some dto
+    /**
+     * @param $command
+     *
+     * $command is a simple DTO
+     */
     public function execute($command)
     {
+        /** @var CommandHandler $handler */
         $handler = $this->commandTranslator->toCommandHandler($command);
 
-        $this->app->make($handler)->handle($command);
+        $handler = \App::Make($handler);
+
+        $handler->handle($command);
     }
 }

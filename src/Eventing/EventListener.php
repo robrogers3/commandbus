@@ -9,10 +9,11 @@ class EventListener
     public function handle($event)
     {
         $eventName = $this->getEventName($event);
+
         $method = $this->isListenerRegistered($eventName);
         if ($method) {
-            return call_user_func(array($this, "when". $eventName), $event);
-            //return $this->$method($event);
+            //return call_user_func(array($this, "when". $eventName), $event);
+            return $this->$method($event);
         }
     }
 
@@ -31,7 +32,7 @@ class EventListener
 
     /**
      * @param $eventName
-     * @return bool
+     * @return mixed
      */
     protected function isListenerRegistered($eventName)
     {

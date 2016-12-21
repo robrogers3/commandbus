@@ -12,7 +12,6 @@ class EventGenerator
 
     public function __construct(EventDispatcher $dispatcher)
     {
-
         $this->dispatcher = $dispatcher;
     }
 
