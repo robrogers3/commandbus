@@ -109,6 +109,8 @@ class SendWelcomeEmail extends EventListener
 ```php
 namespace Acme;
 
+use RobRogers\CommandBus\CommandHandler;
+
 class UserRegisterCommandHandler implements CommandHandler
 {
     /**
