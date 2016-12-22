@@ -7,8 +7,6 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-```Rob Rogers``` ```robrogers3``` ```https://github.com/robrogers3``` ```robrogers@me.com``` ```robrogers3``` ```commandbus``` ```commandbus for php53```
-
 This a CommandBus implementation for php5.3. It's based on illuminate/events. This though will require a few other packages: illuminate/support, illuminate/contracts, and illuminate/container.
 
 A CommandBus allows you to leverage commands and domain events in your php projects.
