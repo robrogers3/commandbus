@@ -10,12 +10,16 @@
 ```Rob Rogers``` ```robrogers3``` ```https://github.com/robrogers3``` ```robrogers@me.com``` ```robrogers3``` ```commandbus``` ```commandbus for php53```
 
 This a CommandBus implementation for php5.3. It's based on illuminate/events. This though will require a few other packages: illuminate/support, illuminate/contracts, and illuminate/container.
+
 A CommandBus allows you to leverage commands and domain events in your php projects.
 
 Essentially, the value add is to replace lines and lines of procedural style code in a class or method, with classes that do one thing.
 These classes are loosely coupled together through eventing initiated by the CommandBus and CommandHandlers.
 
 The usage shown below is the best explanation.
+
+I would note the contributors but this was forked from [Jeffrey at Laracasts](https://github.com/laracasts/Commander)
+My sole contributions are making his Commander Package compatible for legacy web apps that have a bit of illuminate sprinkled in. 
 
 ## Install  
 
