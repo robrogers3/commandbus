@@ -89,7 +89,7 @@ class RegisterUserCommand
 
 2) Next, lets create a listener, like:
 
-```
+```php
 namespace Acme;
 
 use RobRogers\CommandBus\Eventing\EventListener;
@@ -107,6 +107,8 @@ class SendWelcomeEmail extends EventListener
 3) Create your command handler. The commandbus calls the handle method on this class.
 
 ```php
+namespace Acme;
+
 class UserRegisterCommandHandler implements CommandHandler
 {
     /**
