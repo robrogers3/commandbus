@@ -166,7 +166,7 @@ class UserHasRegistered
 5) Use it:
 
 ```php
-$command = new UserRegisterCommand("Rob Rogers");
+$command = new RegisterUserCommand("Rob Rogers");
 
 /** @var \RobRogers\CommandBus\BaseCommandBus $commandBus */
 $commandBus = App::Make('\RobRogers\CommandBus\BaseCommandBus');
