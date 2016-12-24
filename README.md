@@ -218,10 +218,10 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/robrogers3/commandbus.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/robrogers3/agnostic-commandbus/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/robrogers3/agnostic-commandbus.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/robrogers3/agnostic-commandbus.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/robrogers3/agnostic-commandbus.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/robrogers3/commandbus/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/robrogers3/commandbus.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/robrogers3/commandbus.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/robrogers3/commandbus.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/robrogers3/commandbus
 [link-travis]: https://travis-ci.org/robrogers3/commandbus
