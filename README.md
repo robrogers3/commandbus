@@ -99,7 +99,7 @@ use RobRogers\CommandBus\Eventing\EventListener;
 class SendWelcomeEmail extends EventListener
 {
 
-    public function whenUserWasRegistered(UserWasRegistered $event)
+    public function whenUserHasRegistered(UserWasRegistered $event)
     {
         dump( 'Sending mail to ' . $event->user->username);
     }
@@ -137,25 +137,26 @@ class UserRegisterCommandHandler implements CommandHandler
 
     public function handle(/* user registered command */ $command)
     {
-        $event = new Acme\UserWasRegistered($command);
+        $event = new Acme\UserHasRegistered($command);
         $this->eventGenerator->register($event); //you can register many events
     }
 }
 ```
 
-4) Finally create the 'event' registered above. This also a DTO, which contains the $command.
+4) Finally create the 'event' we are listening for. This also a DTO, which contains the above UserRegister $command.
 
 ```php
 namespace Acme;
 
 /**
 * I am  THE EVENT
-* the command data get's shoved inside me. like $this->user->name
+* the command data get's shoved inside me. like $this->user->username
 */
-class UserHasRegistered
+class UserHasRegisteredEvent
 {
     public $user;
-
+    
+    /** @var UserRegister $user */
     public function __construct($user)
     {
         $this->user = $user;
