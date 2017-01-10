@@ -36,7 +36,7 @@ You have an app which uses illimunate packages. Especially illimunate/events.
 ### Your Goal:
 
 Have a way to accomplish some task which takes many subtasks.
-Perhaps currently you have the subtasks inside one class or event one method. Some kind of God Object.
+Perhaps currently you have the subtasks inside one class or even just one method. Some kind of God Object.
 
 ### The Solution:
 
@@ -51,7 +51,7 @@ This method should:
 * Register all the listeners for your events.
 ** The listeners can be fully written out, like 'Acme\UserHasRegistered'. Or better, 'Acme.*' The latter can catch all events prefixed by Acme
 
-1. Register your listeners
+1. Define your listeners
 ``` php
     $listeners = array(
         'Acme\SendWelcomeEmail',
@@ -67,7 +67,7 @@ This method should:
     $listeners = getAppListeners();
 
     foreach ($listeners as $listener) {
-        $dispatcher->listen('CrowdStar.*', $listener);
+        $dispatcher->listen('App.*', $listener);
     }
 ```
 
