@@ -3,8 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 This a CommandBus implementation for php5.3. It's based on illuminate/events. This though will require a few other packages: illuminate/support, illuminate/contracts, and illuminate/container.
@@ -15,9 +13,6 @@ Essentially, the value add is to replace lines and lines of procedural style cod
 These classes are loosely coupled together through eventing initiated by the CommandBus and CommandHandlers.
 
 The usage shown below is the best explanation.
-
-I would note the contributors but this was forked from [Jeffrey at Laracasts](https://github.com/laracasts/Commander)
-My sole contributions are making his Commander Package compatible for legacy web apps that have a bit of illuminate sprinkled in. 
 
 ## Install  
 
